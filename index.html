@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.cards {
+    width: 500px;
+    height: 100%;
+    padding: 40px;
+    background-color: #F4F7F8;
+    font-weight: 500; 
+     font-size: larger;
+    color: #2B2B2B;
+    flex: 1;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+.container7 {
+    display: flex;
+    height: 500px;
+    margin-top: 30px;
+    padding-left: 35px;
+   
+
+}
+
+.mystyle{
+    color:red;
+    font-size: 50px;
+    font-family: bold;
+}
+
+</style>
+
+
+<body>
+ 
+<div class="container7">
+    <div class="cards">
+        <p>
+           <div class="card1"> I love GoDaddy!!!!! They have the best customer service, website builder, hosting, and URL prices. I
+            always recommend GoDaddy to all my friends and colleagues who need an online presence. I have had
+            many other providers but GoDaddy is the best. I'm sticking with GoDaddy. No reason to shop any other
+            company.</div></p>
+    </div>
+
+
+    <div class="cards">
+        <p>
+            <div class="card2">Go Daddy made creating my own website and transferring my domain easy.</div></p>
+    </div>
+
+
+    <div class="cards">
+        <p>
+           <div class="card3">It’s an easy way to a start creating a business for new entrepreneurs!</div> </p>
+    </div>
+
+
+    <div class="cards">
+        <p>
+           <div class="card4"> Easy peasy! GoDaddy has great website templates and you can connect your site to your social media
+            accounts. Create a post using templates they offer, post or schedule and you’re done! You can see
+            metrics on effectiveness of your campaigns as well, all in one place.</div></p>
+    </div>
+
+</div>
+
+
+
+</body>
+
+<script>
+
+// document.getElementsByClassName("cards")[0].addEventListener("click",function(){
+//     this.style.color="red";
+//     this.style.fontSize="22px";
+//     this.style.fontFamily="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+    
+// });
+
+// document.getElementsByClassName("cards")[1].addEventListener("click",function(){
+//     this.style.color="blue";
+//     this.style.fontSize="40px";
+//     this.style.fontFamily="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+// });
+
+// document.getElementsByClassName("cards")[2].addEventListener("click",function(){
+//     this.style.color="green";
+//     this.style.fontSize="30px";
+//     this.style.fontFamily="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+// });
+
+// document.getElementsByClassName("cards")[3].addEventListener("click",function(){
+//     this.style.color="orange";
+//     this.style.fontSize="25px";
+//     this.style.fontFamily="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+// });
+
+    let para = document.querySelectorAll(".cards")[0];
+    
+    para.addEventListener("click",function () {   
+        // para.classList.toggle("mystyle");
+        para.classList.add("mystyle");
+        card1.classList.remove("mystyle");
+    
+    });
+    
+    let card1 = document.querySelectorAll(".cards")[1];
+    card1.addEventListener("click",function () {
+        card1.classList.add("mystyle");
+        para.classList.remove("mystyle");
+        para2.style.color="";
+    // card1.style.color = "red";
+    // card1.style.fontWeight = "bold"
+    
+    });
+    
+    let para2 = document.querySelectorAll(".cards")[2];
+    para2.addEventListener("click",function () {
+    para2.style.color = "red";
+    para2.style.fontweight = "bold";
+    
+    });
+    
+    let para3 = document.querySelectorAll(".cards")[3];
+    para3.addEventListener("click",function () {
+    // para3.style.color = "red";
+    // para3.style.fontweight = "bold";
+    para3.classList.toggle("mystyle");
+    
+    });
+
+    // // mouseover
+    // const para = document.querySelector("p");
+    // function changecolor(){
+    //     para.style.color = "red";
+    //     para.innerText = "Kishu";
+    //     para.style.fontSize = "20px"
+    // }
+    // para.addEventListener("mouseover",changecolor)
+    // para.addEventListener("mouseout",function(){
+    // para.style.color = "red";
+    // para.innerText = "siri"
+    // para.style.fontsize = "medium"
+    
+    // })
+
+
+
+
+    // let p1 = document.querySelectorAll(".cards")[0];
+    // let p2 = document.querySelectorAll(".cards")[1];
+    // let p3 = document.querySelectorAll(".cards")[2];
+    // let p4 = document.querySelectorAll(".cards")[3];
+
+    // p1.addEventListener("click",() => {
+    //    p1.classList.toggle("mystyle");
+    // });
+
+    // p2.addEventListener("click",() => {
+    //     p2.style.color="orange";
+    //     p2.style.fontsize="50px";
+    //     p2.style.fontWeight="bold";
+    // });
+
+    // p3.addEventListener("click",() => {
+    //     p3.style.color="orange";
+    //     p3.style.fontsize="50px";
+    //     p3.style.fontWeight="bold";
+    // });
+    // p4.addEventListener("click",() => {
+    //     p4.style.color="orange";
+    //     p4.style.fontsize="50px";
+    //     p4.style.fontWeight="bold";
+    // });
+    
+    
+
+    </script>
+
+
+</html>
